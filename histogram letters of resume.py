@@ -22,14 +22,6 @@ def clean_text(text_string, special_characters):
 
 resume = clean_text(resume, punctuation)
 
-'''
-#the following code counts how many times a letter appears in the string
-
-from collections import Counter
-str = "Mary had a little lamb"
-counter = Counter(str)
-print counter['a']
-'''
 #you can check the frequency for each letter with the code below
 #example with letter a
 counter = Counter(resume)
@@ -68,17 +60,3 @@ plt.xticks(y_pos, letter_list)
 plt.title('Bar Chart for Letter Frequency in my Resume')
 plt.ylabel('Frequency')
 plt.show()
-
-
-
-
-
-
-   
-    
-
-
-
-
-
-
